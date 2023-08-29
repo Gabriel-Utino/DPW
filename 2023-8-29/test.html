@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>簡易的な家の絵</title>
+    <style>
+        .house {
+            width: 200px;
+            height: 150px;
+            position: relative;
+        }
+        .roof {
+            width: 0;
+            height: 0;
+            border-left: 100px solid transparent;
+            border-right: 100px solid transparent;
+            border-bottom: 100px solid #d35d6e;
+            position: absolute;
+            top: 0;
+        }
+        .walls {
+            width: 200px;
+            height: 100px;
+            background-color: #98bfca;
+            position: absolute;
+            top: 50px;
+        }
+        .door {
+            width: 40px;
+            height: 80px;
+            background-color: #a56539;
+            position: absolute;
+            bottom: 0;
+            left: 80px;
+        }
+    </style>
+</head>
+<body>
+    <div class="house">
+        <div class="roof"></div>
+        <div class="walls"></div>
+        <div class="door"></div>
+    </div>
+</body>
+</html>
