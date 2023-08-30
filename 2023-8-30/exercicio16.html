@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        textarea {
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <form action="#">
+        Nome: <input type="text"><br>
+        Sobrenome: <input type="text"><br>
+        Senha: <input type="text"><br>
+        Escolha uma foto: <input type="file"><br>
+        Sexo: <input type="radio" name="test">Maculino
+        <input type="radio" name="test">Feminino
+        <br>
+        Selecione um Estado: 
+        <select name="selecione" id="">
+            <option value="São Paulo">São Paulo</option>
+            <option value="Outro">Outro</option>
+        </select>
+        <br>
+        Escolha um ou mais meios de comunicação:
+        <input type="checkbox" id="music">Música
+        <input type="checkbox" id="TV">Televisão
+        <input type="checkbox" id="Radio">Rádio
+        <br>
+        Observações: 
+        <textarea name="observações" id="observa" cols="30" rows="10"></textarea>
+        <br>
+        <input type="button" value="Enviar">
+        <input type="button" value="Desfazer alterações">
+    </form>
+</body>
+</html>
