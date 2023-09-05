@@ -1,0 +1,39 @@
+body {
+  background-color: #779bea;
+  font-family: century;
+}
+h1 {
+  background-color: #d3a603;
+  padding: 1rem 2rem;
+}
+a {
+  padding-right: 20px;
+}
+h2 {
+  background-color: #bcc0c0;
+  text-align: center;
+}
+
+.changeColor {
+  color: #2943aa;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.container {
+  padding-left: 40px;
+}
+
+.redColor {
+  color: #c70104;
+}
+
+li {
+  font-weight: bold;
+}
+
+footer {
+  color: #4042a9;
+  font-size: 0.8rem;
+  font-family: italic;
+}
