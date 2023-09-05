@@ -10,37 +10,54 @@
         border-width: 10px;
         border-radius: 5px;
       }
+
       .roof {
-        height: calc(tan(60deg) * 60px / 2);
-        width: 265px;
-        height: 105px;
-        clip-path: polygon(50% 0, 100% 100%, 0 100%);
-        position: absolute;
+        border-left: 140px;
+        border-right: 140px;
+        border-color: transparent;
         border-style: solid;
+        border-bottom: 110px solid black; /* 屋根の色を変更する場合はここの色を変更してください */
+        position: absolute;
+        top: 0px; /* 屋根の位置を調整する場合はここの値を調整してください */
+        left: 10px; /* 屋根の位置を調整する場合はここの値を調整してください */
+        border-radius: 20px;
       }
+
+      .roof2 {
+        border-left: 140px;
+        border-right: 140px;
+        border-color: transparent;
+        border-style: solid;
+        border-bottom: 110px solid white; /* 屋根の色を変更する場合はここの色を変更してください */
+        position: absolute;
+        top: 15px; /* 屋根の位置を調整する場合はここの値を調整してください */
+        left: 10px; /* 屋根の位置を調整する場合はここの値を調整してください */
+      }
+
       .walls {
         width: 200px;
-        height: 180px;
+        height: 160px;
         border-style: solid;
         position: absolute;
         border-color: transparent black black black;
-        top: 100px;
-        left: 30px;
+        top: 90px;
+        left: 40px;
+        border-radius: 10px;
       }
       .door {
         width: 50px;
         height: 100px;
         border-style: solid;
         position: absolute;
-        top: 180px;
-        left: 140px;
+        top: 150px;
+        left: 150px;
       }
       .window {
         width: 20px;
         height: 20px;
         border-style: solid;
         position: absolute;
-        top: 180px;
+        top: 150px;
         left: 80px;
       }
     </style>
@@ -48,9 +65,14 @@
   <body>
     <div class="house">
       <div class="roof"></div>
+      <div class="roof2"></div>
       <div class="door"></div>
       <div class="window"></div>
       <div class="walls"></div>
     </div>
   </body>
 </html>
+
+
+
+
