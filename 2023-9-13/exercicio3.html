@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <p>Valor do produto : <input type="number" id="product"></input></p>
+
+        <p>Com desconto de 10% será : <span id="result"></span></p>
+        <button onclick="calcular()">calcular o valor com desconto</button>
+    </div>
+
+    <script>
+        function calcular() {
+            var valor = parseFloat(document.getElementById("product").value);
+            var result = valor * 0.9;
+            
+            document.getElementById("result").innerText = result;
+        }
+    </script>
+</body>
+</html>

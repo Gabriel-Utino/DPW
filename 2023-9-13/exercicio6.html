@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Escrever um programa Javascript que receba três inteiros e mostre qual deles é o maior e qual o menor. -->
+    <p>Number1 : <input type="number" id="number1"></input></p>
+    <p>Number2 : <input type="number" id="number2"></input></p>
+    <p>Number3 : <input type="number" id="number3"></input></p>
+
+    
+    <p>Max : <span id="max"></span></p>
+    <p>Min : <span id="min"></span></p>
+    <button onclick="Check()">Check</button>
+
+    <script>
+        function Check() {
+            var max;
+            var min;
+            var number1 = parseFloat(document.getElementById("number1").value);
+            var number2 = parseFloat(document.getElementById("number2").value);
+            var number3 = parseFloat(document.getElementById("number3").value);
+
+            if (number1 > number2 && number1 > number3) {
+                max = number1;
+                if (number2 > number3) {
+                    min = number3;
+                } else {
+                    min = number2;
+                }
+            } else if (number2 > number1 && number2 > number3) {
+                max = number2;
+                if (number1 > number3) {
+                    min = number3;
+                } else {
+                    min = number1;
+                }
+            } else {
+                max = number3;
+                if (number1 > number2) {
+                    min = number2;
+                }else {
+                    min = number1;
+                }
+            }
+            
+            document.getElementById("max").innerText = max;
+            document.getElementById("min").innerText = min;
+        }
+    </script>
+
+</body>
+</html>

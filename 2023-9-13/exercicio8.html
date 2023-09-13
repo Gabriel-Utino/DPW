@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--
+        Para doar sangue é necessário ter entre 18 e 67 anos. Escrever um programa Javascript que pergunte a
+        idade de uma pessoa e diga se ela pode doar sangue ou não. Utilize alguns dos operadores lógicos OU (||)
+        e E (&&).
+    -->
+
+    <div>
+        <p>Digite a idade :<input id="age" type="number"></p>
+
+        <button onclick="idade()">Check</button>
+        <span id="check"></span>
+    </div>
+
+
+    <script>
+        function idade() {
+            var age = parseFloat(document.getElementById("age").value);
+            var result;
+
+            if (age >= 18 && age <= 64) {
+                result = "pode doar";
+            } else {
+                result = "não pode doar"
+            }
+            
+            document.getElementById("check").innerText = result;
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        Escrever um programa Javascript que recebe um inteiro e exiba na tela se ele é múltiplo de 7 ou não.
+    -->
+    <p>Number : <input type="number" id="number"></input></p>
+
+    <p>Multiplo de 7 : <span id="check"></span></p>
+    <button onclick="check()">Check</button>
+
+    <script>
+        function check() {
+            var number = parseFloat(document.getElementById("number").value);
+            var result;
+
+            if ((number % 7) === 0) {
+                result = "E múltiplo de 7";
+            } else {
+                result = "Não é múltiplo de 7";
+            }
+
+            document.getElementById("check").innerText = result;
+        }
+    </script>
+
+</body>
+</html>

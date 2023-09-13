@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Escrever um programa Javascript que solicita dois números ao usuário e exiba “igual” caso sejam iguais
+ou mostre qual o maior. -->
+    <div>
+        <p>Number : <input type="number" id="number1"></input></p>
+        <p>Number : <input type="number" id="number2"></input></p>
+
+        <p>Result : <span id="result"></span></p>
+        <button onclick="calcular()">Check</button>
+    </div>
+
+    <script>
+        function calcular() {
+            var number1 = parseFloat(document.getElementById("number1").value);
+            var number2 = parseFloat(document.getElementById("number2").value);
+            var result;
+            if (number1 == number2) {
+                result = "igual"
+            } else {
+                result = "não são igual"
+            }
+            
+            document.getElementById("result").innerText = result;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <p>Valor do produto : <input type="number" id="product"></input></p>
+
+        <p>Pagamento de 4 parcelas : <span id="result"></span></p>
+        <button onclick="parselar()">Calcular</button>
+    </div>
+
+    <script>
+        function parselar() {
+            var valor = parseFloat(document.getElementById("product").value);
+            var result = valor / 4;
+            
+            document.getElementById("result").innerText = result;
+            console.log("usuário pagará " + result + " em quatro parcelas")
+            alert("usuário pagará " + result + " em quatro parcelas")
+        }
+    </script>
+</body>
+</html>
